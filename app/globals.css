@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --uv-primary: #005DFF;
+    --uv-secondary: #2DF1FF;
+    --uv-tertiary: #6F7FFF;
+    --uv-bg: #0C0C0D;
+    --uv-surface: #2A2F35;
+    --uv-text: #E1E4E8;
+    --uv-card: #F9FAFB;
+  }
+
+  body {
+    @apply bg-uv-bg text-uv-text font-body;
+    background-image: 
+      radial-gradient(1200px 600px at 70% -10%, rgba(111,127,255,.12), transparent),
+      radial-gradient(800px 400px at 10% 110%, rgba(45,241,255,.08), transparent);
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .uv-glow {
+    box-shadow: 0 0 24px rgba(45,241,255,.25), inset 0 0 24px rgba(111,127,255,.15);
+  }
+
+  .glass {
+    background: rgba(42, 47, 53, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .ring-uv {
+    @apply ring-2 ring-uv-secondary outline-none;
+  }
+
+  .section-divider {
+    @apply border-t;
+    border-color: rgba(225, 228, 232, 0.05);
+  }
+}
+
