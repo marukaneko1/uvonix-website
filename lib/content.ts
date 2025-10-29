@@ -87,29 +87,29 @@ export const content = {
   },
   team: [
     {
-      name: "Dr. Sarah Chen",
-      role: "CEO & Co-Founder",
-      bio: "Biomedical engineer with 15+ years in sterilization technology",
+      name: "Efriam Levy",
+      role: "CEO",
+      bio: "Founder and visionary behind Uvonix. Background in healthcare innovation and safety technology. Previously led Lifeguard AI and Navido.",
     },
     {
-      name: "Marcus Rodriguez",
+      name: "Efraim Weiss",
+      role: "CFO",
+      bio: "15+ years in finance and real estate. Oversees financial growth, capital strategy, and investor relations.",
+    },
+    {
+      name: "Chaim Gross",
+      role: "COO",
+      bio: "Expert in manufacturing and regulatory compliance. Leads production scale-up and logistics.",
+    },
+    {
+      name: "Sam Lib",
       role: "CTO",
-      bio: "Expert in UV-C systems and safety architecture",
+      bio: "Hardware and supply chain leader with experience scaling telematics products.",
     },
     {
-      name: "Dr. Aisha Patel",
-      role: "Head of Clinical Validation",
-      bio: "Microbiology PhD specializing in germicidal efficacy",
-    },
-    {
-      name: "James Liu",
-      role: "VP of Engineering",
-      bio: "Hardware and embedded systems leader",
-    },
-    {
-      name: "Elena Volkov",
-      role: "VP of Regulatory Affairs",
-      bio: "FDA and international compliance specialist",
+      name: "David Weiss, CPA",
+      role: "Accounting",
+      bio: "Founder of David Weiss CPA PLLC. Provides financial oversight, tax, and compliance strategy.",
     },
   ],
 }
