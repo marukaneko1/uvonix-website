@@ -27,9 +27,9 @@ export function ProductCard({ title, description, features, imageSrc, delay = 0,
         <div className="aspect-video relative rounded-t-lg overflow-hidden">
           {imageSrc ? (
             imageSrc.endsWith('.svg') ? (
-              <img src={imageSrc} alt={title} className="w-full h-full object-cover" />
+              <img src={imageSrc} alt={title} className="w-full h-full object-contain" />
             ) : (
-              <Image src={imageSrc} alt={title} fill className="object-cover" />
+              <Image src={imageSrc} alt={title} fill className="object-contain bg-uv-surface" />
             )
           ) : (
             <div className="w-full h-full bg-uv-surface flex items-center justify-center">

@@ -83,9 +83,9 @@ export default function ProductsPage() {
                   <div className="aspect-video relative rounded-xl overflow-hidden uv-glow">
                     {product.imageSrc ? (
                       product.imageSrc.endsWith('.svg') ? (
-                        <img src={product.imageSrc} alt={product.title} className="w-full h-full object-cover" />
+                        <img src={product.imageSrc} alt={product.title} className="w-full h-full object-contain" />
                       ) : (
-                        <Image src={product.imageSrc} alt={product.title} fill className="object-cover" />
+                        <Image src={product.imageSrc} alt={product.title} fill className="object-contain bg-uv-surface" />
                       )
                     ) : (
                       <div className="w-full h-full bg-uv-surface flex items-center justify-center">

@@ -10,18 +10,18 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'bg-uv-primary text-white hover:bg-uv-primary/90 hover:scale-[1.05] hover:shadow-lg hover:shadow-uv-secondary/50 uv-glow transition-all duration-200',
+          'bg-transparent text-uv-secondary border-2 border-uv-secondary hover:bg-uv-secondary/10 hover:scale-[1.08] hover:shadow-2xl hover:shadow-uv-secondary/70 uv-glow transition-all duration-300 text-base font-semibold px-8 py-4',
         secondary:
           'bg-uv-surface text-uv-text border border-uv-secondary/30 hover:border-uv-secondary hover:scale-[1.02] uv-glow',
         outline:
           'border-2 border-uv-secondary text-uv-secondary hover:bg-uv-secondary/10 hover:scale-[1.02]',
         ghost: 'hover:bg-uv-surface hover:text-uv-text',
       },
-      size: {
-        default: 'h-11 px-6',
-        sm: 'h-9 px-4',
-        lg: 'h-13 px-8 text-base',
-      },
+              size: {
+                default: 'h-12 px-6',
+                sm: 'h-9 px-4',
+                lg: 'h-16 px-10 text-lg',
+              },
     },
     defaultVariants: {
       variant: 'default',

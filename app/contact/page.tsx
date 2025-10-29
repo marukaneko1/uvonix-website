@@ -6,7 +6,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { content } from '@/lib/content'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, MapPin, Globe } from 'lucide-react'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -40,23 +40,25 @@ export default function ContactPage() {
               <CardContent className="pt-6">
                 <Mail className="text-uv-secondary mb-3" size={24} />
                 <h3 className="font-semibold mb-2">Email</h3>
-                <a href="mailto:info@uvonix.com" className="text-uv-text/70 hover:text-uv-secondary transition-colors">
-                  info@uvonix.com
+                <a href="mailto:info@seedpulsefund.com" className="text-uv-text/70 hover:text-uv-secondary transition-colors">
+                  info@seedpulsefund.com
                 </a>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="pt-6">
-                <Phone className="text-uv-secondary mb-3" size={24} />
-                <h3 className="font-semibold mb-2">Phone</h3>
-                <p className="text-uv-text/70">+1 (555) 123-4567</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="pt-6">
                 <MapPin className="text-uv-secondary mb-3" size={24} />
                 <h3 className="font-semibold mb-2">Location</h3>
-                <p className="text-uv-text/70">San Francisco, CA</p>
+                <p className="text-uv-text/70">Brooklyn, NYC</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="pt-6">
+                <Globe className="text-uv-secondary mb-3" size={24} />
+                <h3 className="font-semibold mb-2">Company Website</h3>
+                <a href="https://seedpulsefund.com" target="_blank" rel="noopener noreferrer" className="text-uv-text/70 hover:text-uv-secondary transition-colors">
+                  seedpulsefund.com
+                </a>
               </CardContent>
             </Card>
           </motion.div>

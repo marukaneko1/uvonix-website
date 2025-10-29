@@ -14,11 +14,11 @@ export function Footer() {
               Medical-grade UV-C sterilization technology. Disinfection in seconds. Protection for life.
             </p>
             <a
-              href="mailto:info@uvonix.com"
+              href="mailto:info@seedpulsefund.com"
               className="flex items-center gap-2 text-sm text-uv-secondary hover:text-uv-primary transition-colors"
             >
               <Mail size={16} />
-              info@uvonix.com
+              info@seedpulsefund.com
             </a>
           </div>
 
