@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <h3 className="text-xl font-heading font-bold text-uv-secondary mb-4">
-              Uvonix
+              UVONIX
             </h3>
             <p className="text-sm text-uv-text/70 mb-4 font-body">
               Medical-grade UV-C sterilization technology. Disinfection in seconds. Protection for life.
@@ -61,7 +61,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-uv-text/10 text-center text-sm text-uv-text/50">
-          © {new Date().getFullYear()} Uvonix. All rights reserved.
+          © {new Date().getFullYear()} UVONIX. All rights reserved.
         </div>
       </div>
     </footer>

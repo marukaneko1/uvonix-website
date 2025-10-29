@@ -66,7 +66,7 @@ export const content = {
     },
   },
   advantage: {
-    title: "Why Uvonix",
+    title: "Why UVONIX",
     chips: ["<7-Second Kill", "Safety Around People", "Portable", "Multi-Form Factor", "Cost Efficiency"],
   },
   cta: {
@@ -75,7 +75,7 @@ export const content = {
     buttonText: "Get in Touch",
   },
   contact: {
-    title: "Partner with Uvonix",
+    title: "Partner with UVONIX",
     subtitle: "Explore pilots, integrations, and OEM opportunities",
     form: {
       name: "Name",
@@ -89,7 +89,7 @@ export const content = {
     {
       name: "Efriam Levy",
       role: "CEO",
-      bio: "Founder and visionary behind Uvonix. Background in healthcare innovation and safety technology. Previously led Lifeguard AI and Navido.",
+        bio: "Founder and visionary behind UVONIX. Background in healthcare innovation and safety technology. Previously led Lifeguard AI and Navido.",
     },
     {
       name: "Efraim Weiss",

@@ -7,7 +7,7 @@ import { content } from '@/lib/content'
 export function Advantage() {
   return (
     <Section
-      eyebrow="Why Choose Uvonix"
+      eyebrow="Why Choose UVONIX"
       title={content.advantage.title}
     >
       <div className="flex flex-wrap gap-4 justify-center">
