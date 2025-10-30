@@ -40,9 +40,14 @@ export default function ContactPage() {
               <CardContent className="pt-6">
                 <Mail className="text-uv-secondary mb-3" size={24} />
                 <h3 className="font-semibold mb-2">Email</h3>
-                <a href="mailto:info@seedpulsefund.com" className="text-uv-text/70 hover:text-uv-secondary transition-colors">
-                  info@seedpulsefund.com
-                </a>
+                <div className="space-y-2">
+                  <a href="mailto:info@uvonix.org" className="block text-uv-text/70 hover:text-uv-secondary transition-colors">
+                    info@uvonix.org
+                  </a>
+                  <a href="mailto:info@seedpulsefund.com" className="block text-uv-text/70 hover:text-uv-secondary transition-colors">
+                    info@seedpulsefund.com
+                  </a>
+                </div>
               </CardContent>
             </Card>
             <Card>
