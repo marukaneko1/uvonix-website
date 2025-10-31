@@ -59,7 +59,7 @@ export default function ProductsPage() {
         'Subscription service model',
         'Maintenance included',
       ],
-      imageSrc: '/images/uv-pen.jpg',
+      imageSrc: '/images/uvonixpen.png',
     },
   ]
 
