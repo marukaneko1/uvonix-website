@@ -36,7 +36,7 @@ export function Products() {
           title={content.products.uvPen.title}
           description={content.products.uvPen.description}
           features={content.products.uvPen.features}
-          imageSrc="/images/uvonixpen.png"
+          imageSrc="/images/uv-pen.jpg"
           delay={0.3}
           href="/products#uv-pen"
         />

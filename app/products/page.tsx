@@ -6,6 +6,47 @@ import { ProductCard } from '@/components/ProductCard'
 import { content } from '@/lib/content'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { useState } from 'react'
+
+function ProductImage({ src, alt }: { src: string; alt: string }) {
+  const [imgError, setImgError] = useState(false)
+
+  if (!src) {
+    return (
+      <div className="aspect-video relative rounded-xl overflow-hidden uv-glow">
+        <div className="w-full h-full bg-uv-surface flex items-center justify-center">
+          <span className="text-uv-text/30 font-mono text-sm">Image placeholder</span>
+        </div>
+      </div>
+    )
+  }
+
+  if (src.endsWith('.svg') || imgError) {
+    return (
+      <div className="aspect-video relative rounded-xl overflow-hidden uv-glow">
+        <img 
+          src={src} 
+          alt={alt} 
+          className="w-full h-full object-contain bg-uv-surface"
+          onError={() => setImgError(true)}
+        />
+      </div>
+    )
+  }
+
+  return (
+    <div className="aspect-video relative rounded-xl overflow-hidden uv-glow">
+      <Image 
+        src={src} 
+        alt={alt} 
+        fill 
+        className="object-contain bg-uv-surface"
+        unoptimized
+        onError={() => setImgError(true)}
+      />
+    </div>
+  )
+}
 
 export default function ProductsPage() {
   const products = [
@@ -59,7 +100,7 @@ export default function ProductsPage() {
         'Subscription service model',
         'Maintenance included',
       ],
-      imageSrc: '/images/uvonixpen.png',
+      imageSrc: '/images/uv-pen.jpg',
     },
   ]
 
@@ -80,19 +121,7 @@ export default function ProductsPage() {
                 className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
               >
                 <div className={`${idx % 2 === 1 ? 'md:order-2' : ''}`}>
-                  <div className="aspect-video relative rounded-xl overflow-hidden uv-glow">
-                    {product.imageSrc ? (
-                      product.imageSrc.endsWith('.svg') ? (
-                        <img src={product.imageSrc} alt={product.title} className="w-full h-full object-contain" />
-                      ) : (
-                        <Image src={product.imageSrc} alt={product.title} fill className="object-contain bg-uv-surface" />
-                      )
-                    ) : (
-                      <div className="w-full h-full bg-uv-surface flex items-center justify-center">
-                        <span className="text-uv-text/30 font-mono text-sm">Image placeholder</span>
-                      </div>
-                    )}
-                  </div>
+                  <ProductImage src={product.imageSrc} alt={product.title} />
                 </div>
                 <Card className={`h-full ${idx % 2 === 1 ? 'md:order-1' : ''}`}>
                   <CardContent>
